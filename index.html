@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#contact">Contact</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#about">About Myself</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#skills">Skills</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#code">Code example</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#experience">Work experience</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#education">Education and courses</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#languages">Languages</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+      <div class="container">
+        <section class="profile">
+          <div class="container">
+            <div class="profile__flex">
+              <img class="profile__img" src="assets/img/photo.jpg" alt="photo">
+              <div class="profile__name">
+                <h1 class="profile__title">Igor Minaev</h1>
+                <p class="profile__description">Junior Frontend Developer</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section" id="contact">
+          <div class="container">
+            <h2 class="section__title">Contact</h2>
+            <ul class="section__list">
+              <li class="section__item">Phone:
+                <a class="section__link" href="tel:+375447857870" target="_blank">+375(44)785-78-70
+                </a>
+              </li>
+              <li class="section__item">E-mail:
+                <a class="section__link" href="mailto:igor.minayeu@gmail.com" target="_blank">igor.minayeu@gmail.com</a>
+              </li>
+              <li class="section__item">Telegram
+                <a class="section__link" href="https://t.me/igor_minaev" target="_blank">@igor_minaev</a>
+              </li>
+              <li class="section__item">Github
+                <a class="section__link" href="https://github.com/igor-minaev">igor-minaev</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section" id="about">
+          <h2 class="section__title">About Myself</h2>
+          <p class="section__text">I have been working as an electrician for a long time. And now I am no longer developing as a
+            specialist in this area,
+            but I am very interested in learning something new. Frontend development interested me the most because it is an
+            opportunity to create something that is tonal and useful for people, and even during development, I can immediately
+            see
+            the finished result. This is why I am here.</p>
+        </section>
+        <section class="section" id="skills">
+          <h2 class="section__title">Skills</h2>
+          <ul class="section__list">
+            <li class="section__item">HTML</li>
+            <li class="section__item">CSS (SASS/SCSS, BEM)</li>
+            <li class="section__item">JavaScript</li>
+            <li class="section__item">Git</li>
+            <li class="section__item">VS Code</li>
+          </ul>
+        </section>
+        <section class="section" id="code">
+          <h2 class="section__title">Code</h2>
+          <pre class="pre">
+            <code>
+  function noSpace(x){
+  return x.split('').map(i => i === ' ' ? '' : i).join('');
+  }
+            </code>
+          </pre>
+        </section>
+        <section class="section" id="experience">
+          <h2 class="section__title">Experience</h2>
+          <ul class="section__list">
+            <li class="section__item">
+              <a class="section__link" href="https://igor-minaev.github.io/safari/">Safari</a>
+            </li>
+            <li class="section__item">
+              <a class="section__link" href="https://igor-minaev.github.io/Shopno/">Shopno</a>
+            </li>
+          </ul>
+        </section>
+        <section class="section" id="education">
+          <h2 class="section__title">Education</h2>
+          <ul class="section__list">
+            <li class="section__item">Code basics HTML</li>
+            <li class="section__item">Code basics CSS</li>
+            <li class="section__item">Code basics JS</li>
+            <li class="section__item">Udemy</li>
+          </ul>
+        </section>
+        <section class="section" id="languages">
+          <h2 class="section__title">Languages</h2>
+          <ul class="section__list">
+            <li class="section__item">Russian: native speaker</li>
+            <li class="section__item">English: A2 - B1 (learning in process...)</li>
+          </ul>
+        </section>
+      </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container">
+      <a class="footer__github" href="https://github.com/igor-minaev">Github</a>
+      <span class="footer__text">Minsk, 2021</span>
+      <a class="footer__rss" href="https://rs.school/js/"></a>
+    </div>
+  </footer>
+</body>
+</html>

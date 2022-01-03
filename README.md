@@ -1,1 +1,1 @@
-# rsschool-cv
+# https://igor-minaev.github.io/rsschool-cv/
