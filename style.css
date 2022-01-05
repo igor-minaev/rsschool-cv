@@ -2,9 +2,19 @@
 *::after,
 *::before{
 	box-sizing: border-box;
+  margin: 0; 
+  padding: 0;
 }
 
+html {
+  scroll-behavior: smooth; 
+}
+
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 	font-size: 18px;
@@ -13,18 +23,14 @@ body {
   background-color: #E5E5E5;
 }
 
-a{
-	text-decoration: none;
-	color: inherit;
-}
-
-.container{
-	max-width: 1440px;
-	margin: 0 auto;
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 25px;
 }
 
 .header {
-  background-color: #2B2D30;
+  background-color: #2B2D30
 }
 
 .menu {
@@ -34,82 +40,184 @@ a{
 
 .menu__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  font-size: 16px;
-	line-height: 19px;
+  list-style: none;
+}
+
+.menu__item {
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 .menu__link {
   padding: 10px 20px;
   line-height: 50px;
+  text-decoration: none;
+  font-size: 18px;
+	line-height: 140%;
+  color: #2E7EE0;
+  transition: color 0.5s;
+  
 }
 
 .menu__link:hover {
-  color: #1404E2;
+  color: #43ecc2;
+  
 }
 
-.profile {
-  margin-bottom: 40px;
-}
-
-.profile__flex {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.profile__img {
-  border-radius: 20%;
-}
-
-.profile__title {
-  font-weight: 700;
-	font-size: 90px;
-	line-height: 130%;
-	text-align: center;
-}
-
-.profile__description {
-  font-weight: 700;
-	font-size: 50px;
-	line-height: 130%;
-	text-align: center;
+.main__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .section {
+  padding: 35px 0;
+  border-bottom: 1px solid #2B2D30;
+  width: calc(50% - 20px);
+}
+
+.section__profile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px 30px 35px;
+    
+}
+
+.section__photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #2E7EE0;;
+}
+
+.section__profile__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   text-align: center;
-  margin-bottom: 40px;
-  color: #2B2D30;
 }
 
 .section__title {
+  margin-bottom: 30px;
+  padding-right: 20px;
+  font-size: 35px;
   font-weight: 700;
-	font-size: 35px;
-  margin-bottom: 15px;
+  text-transform: uppercase;
   color: #2E7EE0;
+  line-height: 100%;
+}
+
+.title {
+  padding-right: 100px;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.section__description{
+  font-size: 25px;
+  margin-bottom: 20px;
+  padding-left: 100px;
+}
+
+
+.section__text {
+  background-color: #2B2D30;
+}
+
+.section-list {
+  padding: 0; 
+  margin-left: 20px;
+}
+
+.section__item {
+    position: relative;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    color: #2B2D30;
+    list-style-position: inside;
+    list-style-type: circle;
+}
+
+.section__link {
+  text-decoration: none;
+  font-size: 18px;
+	line-height: 140%;
+  color: #2E7EE0;
+  transition: color 0.5s;
 }
 
 .section__link:hover {
-  color: #2E7EE0;
+  color: #43ecc2;
+  
+}
+
+.section__info {
+  color: #2B2D30;
+}
+
+.section__languages {
+  border-bottom: 0;
+}
+
+.pre {
+  padding: 0;
+  margin: 0;
+  color: #2B2D30;
+  white-space: pre-wrap;
+  word-break: break-all;
 }
 
 .footer {
-  padding: 20px;
+  padding: 10px 0;
   background-color: #2B2D30;
 }
-.footer__container {
+
+.footer__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  list-style-type: none;
+}
+
+.footer__link {
+  text-decoration: none;
+  font-size: 18px;
+	line-height: 140%;
   color: #2E7EE0;
 }
 
-.footer__rss {
-  width: 121px;
-  height: 45px;
-  background-image: url(assets/svg/rss.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
+@media (max-width: 1100px) {
+  .menu__list {
+  flex-wrap: wrap;
+  }
 }
 
+@media (max-width: 800px) {
+  .section__profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section__photo {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 650px) {
+  .main__container {
+    flex-direction: column;
+  }
+
+  .section {
+    width: 100%;
+  }
+  .menu__list {
+  flex-wrap: nowrap;
+  flex-direction: column;
+  }
+}
