@@ -89,6 +89,7 @@ body {
 .section__photo {
     width: 300px;
     height: 300px;
+    object-fit: cover;
     border-radius: 50%;
     border: 5px solid #2E7EE0;;
 }
